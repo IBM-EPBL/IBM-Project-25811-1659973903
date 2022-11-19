@@ -1,0 +1,184 @@
+*{
+    @import url('https://fonts.googleapis.com/css2?family=Allison&family=IBM+Plex+Sans+Arabic:wght@100;500&display=swap');
+    padding: 0;
+    margin: 0;
+    font-family:'IBM Plex Sans Arabic', sans-serif;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    user-select: none;     
+}
+.homepageintro{
+    position: relative;
+    top: -20px;
+    height: 106vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.text{
+    height: 50%;
+    width: 40%;
+    top: 300px;
+    left: 10%;
+    position: absolute;
+}
+.text h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 60px;
+}
+.text pre{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+.button {
+    position: absolute;
+    margin-top: 170px;
+    left: 165px;
+    height: 5vh;
+    width: 17vh;
+    font-style: italic;
+    border-radius: 5px;
+    background-color: GREEN;
+    color: BLACK;
+    border: 2px solid green;
+}
+.button:hover {
+    transition: 0.5s;
+    background-color: inherit;
+    color: white;
+}
+.btn{
+    color: white;
+    background-color: transparent;
+    border-radius: 10px;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+.container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container2{
+    position: relative;
+    top:80px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;   
+}
+/*---------------------header------------------------*/
+.nav_container{
+    display: flex;
+    justify-content: center;
+}
+.nav{
+    height: 60px;
+    background: rgb(31, 28, 28);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: fixed;   
+    display: flex;
+    justify-content: center;
+    top: 9px;
+    width: 85%;
+    z-index: 1;
+    border-radius: 25px; 
+    transition: 0.9s;
+}
+nav ul{    
+    margin-right: 25px;
+}
+nav ul {
+    line-height: 50px;
+    padding: 5px;   
+}
+nav ul  a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+ul a.active,ul a:hover{
+    background: green;
+    color: black;
+    text-decoration: none;
+}
+button{
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 9px;
+    color: white;
+    transition: .5s ease;
+    background: #0082e6;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+button:hover{
+    background: transparent;
+    color: black;
+}
+  
+ @media (max-width:950px) {
+    .checkbtn{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width:50%;
+        height: 100vh;
+        background: lavenderblush;
+        top:50px;
+        left: -100%;
+        transition: .7s ease-out;
+        text-align: center;
+        margin-top: 20px;   
+    }
+    nav ul li a{
+        color: black;
+    }
+    .nav{
+        height: 70px;
+    }
+    nav ul li{
+        display: block;  
+    }
+    nav ul li ul{
+       left: 100%;
+       width:100%;
+       height: 30%;
+       background: lavenderblush;
+       top: 19%;
+    }
+    nav ul li ul li a{
+        font-size: 13px;
+    }
+    nav ul li:hover ul{
+        visibility: visible; 
+    }
+    a.active,a:hover{
+        background: white;
+        color: #0082e6;
+        padding: 15px;
+    }
+    #check:checked ~ul{
+        left:0;  
+    }
+    
+    .description{
+        margin-top: 60px;
+    }
+    .d2{
+        visibility: hidden;
+    }
+ }
+
+ 

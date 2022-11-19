@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ color: black;   
+}
+.body{
+    color: black;
+}
+.main{
+    display:flex;
+    height: 100vh;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nav_container{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+.nav{
+    height: 60px;
+    background: rgb(31, 28, 28);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: fixed;   
+    display: flex;
+    justify-content: center;
+    top: 9px;
+    width: 85%;
+    z-index: 1;
+    border-radius: 25px; 
+    transition: 0.9s;
+}
+nav ul{    
+    margin-right: 25px;
+}
+nav ul {
+    line-height: 50px;
+    padding: 5px;   
+}
+nav ul  a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+ul a.active,ul a:hover{
+    background: green;
+    color: white;
+    text-decoration: none;
+}
+.body{
+    margin: auto;
+    margin-top: 4.5%;
+    height: 89%;
+    width: 80%;
+    display: flex;
+    color: white;
+    border-radius: 10px;
+}
+.left{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+.left img{
+    position: absolute;
+    top: 200px;
+    height: 400px;
+}
+.right{
+    height: 100%;
+    width: 60%;
+}
+#upload-file{
+    font-size: 30px;
+}
+.p{
+    font-size: 25px;
+    font-weight: 300;
+    margin:30px 10px 20px 80px;
+    font-family: monospace;
+}
+.image-section{
+    position: relative;
+    top: 15px;
+    left: 150px;
+}
+.btn{
+    margin: 15px 0px 0px 85px;
+    
+}
+button{
+    width: 150px;
+    height: 40px;
+    font-size: 30px;
+    
+}
+#btn-predict{
+    position: relative;
+    top: -50px;
+}
+select{
+    width: 225px;
+    letter-spacing: 2px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    font-family: monospace;
+
+}
+input{
+    width: 600px;
+    letter-spacing: 2px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    font-family: monospace;
+
+}
+#result{
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 30px 0px 0px 85px;
+}
+select{
+    /*  background-color: black; */
+}
